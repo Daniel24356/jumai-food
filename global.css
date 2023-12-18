@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: solid 1px gainsboro;
+}
+.menu-img{
+    width: 25px;
+    height: 25px;
+}
+.food-menu{
+    display: none;
+}
+nav img{
+    width: 203px;
+    height: 28px;
+}
+.help-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(42, 42, 42);
+}
+.log-button{
+    width: 135px;
+    height: 40px;
+    background-color: rgb(246, 139, 30);
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.help-box{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+footer{
+    background-color: rgb(42, 42, 42);
+   padding-top: 108px;
+   padding-bottom: 20px;
+   padding-left: 7%;
+   padding-right: 7%;
+}
+.content{
+    display: flex;
+    gap: 128px;
+}
+.content ul{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.content ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+.content ul li a{
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.terms-box{
+    display: flex;
+    justify-content: space-between;
+}
+.terms-text{
+    color: rgb(204, 204, 204);
+    font-size: 16px;
+    font-weight: 400;
+}
+@media screen and (max-width:430px){
+     .food-box{
+        display: none;
+     }
+     .food-logo{
+        width: 70px;
+     }
+     .help-box{
+        display: none;
+     }
+     .food-menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100px;
+     }
+     nav{
+        padding: 0px 3%;
+     }
+     .content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+     }
+     .terms-box{
+        flex-direction: column;
+     }
+}
